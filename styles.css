@@ -65,6 +65,7 @@ td {
   border: 2px solid rgb(228, 198, 225);
   cursor: pointer;
   text-align: center;
+  user-select: none;
 }
 
 .hidden {
