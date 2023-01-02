@@ -20,10 +20,11 @@ body {
 
 h1 {
   font-family: "EB Garamond", serif;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 900;
   text-align: center;
-  margin-top: 70px;
+  margin-top: 50px;
+  margin-bottom: 80px;
 }
 
 :root {
@@ -38,34 +39,46 @@ h1 {
   width: var(--container-width-lg);
   margin: 0 auto;
   display: flex;
+  height: 100vh;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 /* Content */
 
+.table {
+  display: flex;
+  flex-direction: column;
+}
+
 .brel-table {
   display: flex;
+  height: 400px;
   justify-content: center;
   font-family: "EB Garamond", serif;
   font-size: 2rem;
   font-weight: 900;
-  
-  margin-bottom: 50px;
+  padding: 20px;
+  margin: 80px;
 }
 
 table {
+  display: table;
   transform: rotate(-45deg);
-
-  margin-top: 130px;
+  vertical-align: baseline;
+  transform-origin: center;
+  box-sizing: border-box;
+  border-collapse: collapse;
 }
 
 td {
-  width: 200px;
-  height: 200px;
-  border: 2px solid rgb(228, 198, 225);
+  width: 120px;
+  height: 100px;
+  border: 4px solid rgb(228, 198, 225);
   cursor: pointer;
   text-align: center;
   user-select: none;
+  box-sizing: content-box;
 }
 
 .hidden {
@@ -73,36 +86,38 @@ td {
 }
 
 .north-meteor {
-  position: sticky;
-  left: 49.6%;
-  top: 5%;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   border: 1px solid rgb(228, 198, 225);
   border-radius: 40%;
   background-color: rgb(238, 161, 74);
   cursor: pointer;
   user-select: none;
-
-  margin-top: 150px;
 }
 
 .south-meteor {
-  position: sticky;
-  left: 49.4%;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   border: 1px solid rgb(228, 198, 225);
   border-radius: 40%;
   background-color: rgb(238, 161, 74);
   cursor: pointer;
   user-select: none;
-
-  margin-top: 140px;
 }
 
 label {
-  text-align: center;
-  margin: 10px 0;
   user-select: none;
+}
+
+.n-btn,
+.s-btn {
+  justify-content: right;
+  display: flex;
+  width: 225px;
+  height: 50px;
+  flex-direction: row;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  gap: 10px;
 }
