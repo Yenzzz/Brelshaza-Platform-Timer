@@ -71,3 +71,38 @@ td {
 .hidden {
   border: 0;
 }
+
+.north-meteor {
+  position: sticky;
+  left: 49.6%;
+  top: 5%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(228, 198, 225);
+  border-radius: 40%;
+  background-color: rgb(238, 161, 74);
+  cursor: pointer;
+  user-select: none;
+
+  margin-top: 150px;
+}
+
+.south-meteor {
+  position: sticky;
+  left: 49.4%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(228, 198, 225);
+  border-radius: 40%;
+  background-color: rgb(238, 161, 74);
+  cursor: pointer;
+  user-select: none;
+
+  margin-top: 140px;
+}
+
+label {
+  text-align: center;
+  margin: 10px 0;
+}
+
