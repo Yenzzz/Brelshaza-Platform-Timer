@@ -104,4 +104,5 @@ td {
 label {
   text-align: center;
   margin: 10px 0;
+  user-select: none;
 }
