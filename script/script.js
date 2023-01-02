@@ -34,7 +34,7 @@ northMeteorButton.addEventListener("click", function () {
         duration -= 1000; // 1000 milliseconds = 1 second
         let minutes = Math.floor(duration / 60000);
         let seconds = Math.floor((duration % 60000) / 1000);
-        td.innerHTML = "Timer: " + minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+        td.innerHTML = minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
 
         if (duration <= 0) {
           td.classList.remove("hidden");
@@ -78,7 +78,7 @@ southMeteorButton.addEventListener("click", function () {
         duration -= 1000; // 1000 milliseconds = 1 second
         let minutes = Math.floor(duration / 60000);
         let seconds = Math.floor((duration % 60000) / 1000);
-        td.innerHTML = "Timer: " + minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+        td.innerHTML = minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
 
         if (duration <= 0) {
           td.classList.remove("hidden");
@@ -119,7 +119,7 @@ function subtract(element) {
         duration -= 1000; // 1000 milliseconds = 1 second
         let minutes = Math.floor(duration / 60000);
         let seconds = Math.floor((duration % 60000) / 1000);
-        element.innerHTML = "Timer: " + minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+        element.innerHTML = minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
         if (duration <= 0) {
           element.classList.remove("hidden");
           element.style.pointerEvents = "auto";
