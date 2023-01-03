@@ -41,7 +41,6 @@ h1 {
   display: flex;
   height: 100vh;
   flex-direction: column;
-  overflow-x: hidden;
 }
 
 /* Content */
@@ -120,4 +119,52 @@ label {
   margin: auto;
   align-items: center;
   gap: 10px;
+}
+
+/* Screen Sizes Modification */
+
+@media screen and (max-width: 600px) {
+  .main-container {
+    width: var(--container-width-sm);
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-container {
+    width: 100vw;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .brel-table {
+    height: 280px;
+    margin: 40px;
+    font-size: 1.5rem;
+  }
+
+  table {
+    transform: rotate(-44deg);
+  }
+
+  td {
+    width: 70px;
+    height: 70px;
+  }
+
+  .north-meteor,
+  .south-meteor {
+    width: 15px;
+    height: 15px;
+  }
+
+  .n-btn,
+  .s-btn {
+    width: 200px;
+  }
 }
